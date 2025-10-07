@@ -21,10 +21,19 @@ def get_dict(file):
         discount = float(row[11])
         profit = float(row[12])
 
-        
-        in_d[subcat] = [sales, discount, profit]
+        in_d_list = [sales, discount, profit]
 
-        out_d[category] = in_d
+        if category not in out_d:
+            out_d[category] = {}
+
+        if subcat not in out_d[category]:
+            out_d[category][subcat] = []
+
+        out_d[category][subcat].append(in_d_list)
+
+
+    print(out_d, sep='\n')
+        
 
     inFile.close()
     return out_d
