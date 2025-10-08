@@ -26,14 +26,4 @@ def get_total_sales_discount_profits(cat_dict):
             out_d[category][subcat] = totals
 
     return out_d
-
-
-def main():
-    data = load_csv.get_dict('/Users/xiwenm/Documents/SI201/SI201_Project1/SampleSuperstore.csv')
-
-    print(get_total_sales_discount_profits(data))
-
-main()
-
-            
             

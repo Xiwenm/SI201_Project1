@@ -30,9 +30,6 @@ def get_dict(file):
             out_d[category][subcat] = []
 
         out_d[category][subcat].append(in_d_list)
-
-
-    print(out_d, sep='\n')
         
 
     inFile.close()
