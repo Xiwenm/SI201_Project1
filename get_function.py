@@ -3,6 +3,13 @@
 # Team members: Xiwen Mark, Chih-Hsiang Chang 
 
 def get_total_sales_discount_profits(cat_dict):
+    """
+    Creates a dictionary containing all categories with their total sales, total profit, and total discount
+
+    Input: cat_dict (list of dictionaries)
+    Output: total(dictionary)
+
+    """
     out_d = {}
     
     for category, subcats in cat_dict.items():
@@ -27,6 +34,10 @@ def get_total_sales_discount_profits(cat_dict):
 
 def get_total_entires(cat_dict):
     """
+    Takes a dictionary, then count the number of entries in that dictionary, then return the total entries
+    Input: cat_dict (list of dictionaries)
+    Output: total (dictionary)
+
     """
     out_d = {}
     
