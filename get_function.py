@@ -2,8 +2,6 @@
 # Assignment: Project 1
 # Team members: Xiwen Mark, Chih-Hsiang Chang 
 
-import load_csv
-
 def get_total_sales_discount_profits(cat_dict):
     out_d = {}
     
@@ -26,4 +24,16 @@ def get_total_sales_discount_profits(cat_dict):
             out_d[category][subcat] = totals
 
     return out_d
-            
+
+def get_total_entires(cat_dict):
+    """
+    """
+    out_d = {}
+    
+    for category, subcats in cat_dict.items():
+        total_entries = 0
+        for subcat, values in subcats.items():
+            total_entries += len(values)  
+        out_d[category] = total_entries 
+
+    return out_d
