@@ -27,11 +27,8 @@ def profit_margin_of_category(cat_dict, category):
         return 0
     
     profit_margin = (total_profit / total_sales) * 100
-    
-    finald = {}
-    finald[category] = round(profit_margin,3)
-
-    return finald
+    profit_margin = int(profit_margin)
+    return profit_margin
     
 
 
