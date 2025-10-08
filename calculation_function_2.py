@@ -2,31 +2,26 @@
 # Assignment: Project 1
 # Team members: Xiwen Mark, Chih-Hsiang Chang 
 
-import load_csv
-import get_function
-
 # Problem 3: What is the average sales for Technology?
-def calc_average_sales(cat_total_dict, category):
+
+def calc_average_sales(cat_total_dict, total_entires_dict, category):
+    """
+    Calculating average sales of the category given.
+    The average sales tell you how much revenue you earn, on average, per order (or entry) in that category.
+    """
     total_sales = 0
-    count = 0
     for key, value in cat_total_dict[category].items():
-        total_sales += value[1]
-        count += 1
-    return round(total_sales/count, 2)
+        total_sales += value[0]
+    return round(total_sales/total_entires_dict[category], 2)
 
 
 # Problem 4: What is the average discount rate for Technology?
-def avg_discount_rate(cat_total_dict, category):
+def avg_discount_rate(cat_total_dict, total_entires_dict, category):
+    """
+    Calculating average discount rate of the category given
+    How much discount, on average, giving each time someone buys something in that category.
+    """
     total_discount = 0
-    count = 0
     for key, value in cat_total_dict[category].items():
         total_discount += value[1]
-        count += 1
-    return round(total_discount/count, 2)
-
-def main():
-    data = get_function.get_total_sales_discount_profits(load_csv.get_dict('/Users/xiwenm/Documents/SI201/SI201_Project1/SampleSuperstore.csv'))
-
-    print(avg_discount_rate(data, 'Technology'))
-
-main()
+    return round(total_discount/total_entires_dict[category], 2)
