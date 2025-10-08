@@ -1,7 +1,13 @@
 
 
-#Problem 1 - What is the profit margin of Technology?
+#Problem 1 - What is the profit margin of Technology? (Chih-Hsiang Chang)
 def profit_margin_of_category(cat_dict, category):
+    """
+    Calculates the profit margin of the subcategories under the category of technology, returns the profit margin
+    Input: categories (list of dicts), category (string)
+    Output: profit_margin (dictionary
+
+    """
     if category not in cat_dict:
         return None
     
@@ -23,13 +29,19 @@ def profit_margin_of_category(cat_dict, category):
     finald = {}
     finald[category] = profit_margin
 
-    return finald
+    return (f"{finald}:.2f%")
     
 
 
-#Problem 2 What is the most profitable subcategory in Technology?
+#Problem 2 What is the most profitable subcategory in Technology? (Chih-Hsiang Chang)
 
 def most_profitable_subcategory_in_category(cat_dict, category):
+    """
+    Finds the most profitable subcategory under the main category of tech, returns the most profitable sub-category
+    Input: cat_dict(list of dicts), category (string)
+    Output: highest_profit_sub (string)
+
+    """
     if category not in cat_dict:
         return None
     subcats = cat_dict[category]
