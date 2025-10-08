@@ -3,9 +3,11 @@
 #Problem 1 - What is the profit margin of Technology? (Chih-Hsiang Chang)
 def profit_margin_of_category(cat_dict, category):
     """
-    Calculates the profit margin of the subcategories under the category of technology, returns the profit margin
+    Calculates the profit margin of the subcategories under the category of technology, returns the profit margin up until
+    3 digits after the decimal
+
     Input: categories (list of dicts), category (string)
-    Output: profit_margin (dictionary
+    Output: profit_margin (dictionary)
 
     """
     if category not in cat_dict:
@@ -27,9 +29,9 @@ def profit_margin_of_category(cat_dict, category):
     profit_margin = (total_profit / total_sales) * 100
     
     finald = {}
-    finald[category] = profit_margin
+    finald[category] = round(profit_margin,3)
 
-    return (f"{finald}:.2f%")
+    return finald
     
 
 
