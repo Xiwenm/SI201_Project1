@@ -27,5 +27,5 @@ def main():
     # Call problem 4
     problem_4 = calc_average_sales(total_sales_dict, total_entries_dict, "Technology")
 
-    output_function(problem_1, problem_2, problem_3, problem_4)
+    output_function.output_function(problem_1, problem_2, problem_3, problem_4)
 main()

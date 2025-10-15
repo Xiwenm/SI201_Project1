@@ -1,0 +1,6 @@
+=== Analysis Results ===
+
+1. Profit margin of Technology: 17
+2. Most profitable subcategory in Technology: Phones
+4. Average sales in Technology: 452.71
+3. Average discount rate in Technology: 0.13
