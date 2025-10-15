@@ -2,6 +2,7 @@
 # Assignment: Project 1
 # Team members: Xiwen Mark, Chih-Hsiang Chang
 # Gen AI: Used to understand concepts and fix some code structures
+# Problems 1 and 2 written by Chih-Hsiang Chang, Problems 3 and 4 written by Xiwen Mark
 
 
 import load_csv
