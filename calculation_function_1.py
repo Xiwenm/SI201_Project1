@@ -1,6 +1,8 @@
 # Course: SI 201
 # Assignment: Project 1
-# Team members: Xiwen Mark, Chih-Hsiang Chang 
+# Team members: Xiwen Mark, Chih-Hsiang Chang
+# Gen AI: Used to understand concepts and fix some code structures
+
 
 #Problem 1 - What is the profit margin of Technology? (Chih-Hsiang Chang)
 def profit_margin_of_category(cat_dict, category):

@@ -1,3 +1,9 @@
+# Course: SI 201
+# Assignment: Project 1
+# Team members: Xiwen Mark, Chih-Hsiang Chang
+# Gen AI: Used to understand concepts and fix some code structures
+
+
 import csv
 
 def get_dict(file):

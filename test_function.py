@@ -1,3 +1,9 @@
+# Course: SI 201
+# Assignment: Project 1
+# Team members: Xiwen Mark, Chih-Hsiang Chang
+# Gen AI: Used to understand concepts and fix some code structures
+
+
 import unittest
 from calculation_function_1 import profit_margin_of_category, most_profitable_subcategory_in_category
 from calculation_function_2 import calc_average_sales, avg_discount_rate

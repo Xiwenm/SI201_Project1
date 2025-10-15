@@ -1,6 +1,8 @@
 # Course: SI 201
 # Assignment: Project 1
-# Team members: Xiwen Mark, Chih-Hsiang Chang 
+# Team members: Xiwen Mark, Chih-Hsiang Chang
+# Gen AI: Used to understand concepts and fix some code structures
+
 
 def output_function(problem_1, problem_2, problem_3, problem_4):
     with open("output.txt", "w") as file:
