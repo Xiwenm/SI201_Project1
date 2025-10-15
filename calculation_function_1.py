@@ -1,4 +1,6 @@
-
+# Course: SI 201
+# Assignment: Project 1
+# Team members: Xiwen Mark, Chih-Hsiang Chang 
 
 #Problem 1 - What is the profit margin of Technology? (Chih-Hsiang Chang)
 def profit_margin_of_category(cat_dict, category):

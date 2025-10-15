@@ -2,6 +2,7 @@ import load_csv
 from calculation_function_1 import profit_margin_of_category, most_profitable_subcategory_in_category
 from calculation_function_2 import avg_discount_rate, calc_average_sales
 import get_function
+import output_function
 
 def main():
     category_dict = load_csv.get_dict('SampleSuperstore.csv')
@@ -20,14 +21,5 @@ def main():
     # Call problem 4
     problem_4 = calc_average_sales(total_sales_dict, total_entries_dict, "Technology")
 
-    with open("output.txt", "w") as file:
-        file.write("=== Analysis Results ===\n\n")
-        file.write(f"1. Profit margin of Technology: {problem_1}\n")
-        file.write(f"2. Most profitable subcategory in Technology: {problem_2}\n")
-        file.write(f"4. Average sales in Technology: {problem_4}\n")
-        file.write(f"3. Average discount rate in Technology: {problem_3}\n")
-
-
-    print("Results have been written to 'output.txt'")
-
+    output_function(problem_1, problem_2, problem_3, problem_4)
 main()
