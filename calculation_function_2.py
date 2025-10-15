@@ -4,7 +4,7 @@
 # Gen AI: Used to understand concepts and fix some code structures
  
 
-# Problem 3: What is the average sales for Technology?
+# Problem 3: What is the average sales for Technology? (Xiwen mark)
 
 def calc_average_sales(cat_total_dict, total_entires_dict, category):
     """
@@ -17,7 +17,7 @@ def calc_average_sales(cat_total_dict, total_entires_dict, category):
     return round(total_sales/total_entires_dict[category], 2)
 
 
-# Problem 4: What is the average discount rate for Technology?
+# Problem 4: What is the average discount rate for Technology? (Xiwen Mark)
 def avg_discount_rate(cat_total_dict, total_entires_dict, category):
     """
     Calculating average discount rate of the category given
